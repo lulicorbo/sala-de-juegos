@@ -1,0 +1,15 @@
+<div class="login-container">
+
+    <h1>INICIAR SESION</h1>
+    <input type="text" placeholder="Correo electrónico" [(ngModel)]="username" class="login-input" />
+
+    <input type="password" placeholder="clave" [(ngModel)]="password" class="login-input" />
+
+    <button (click)="login()" class="login-button">
+        ACCEDER
+    </button>
+
+    <div class="register-link-container">
+        <a routerLink="../registro" class="registro-link">CREAR CUENTA</a>
+        </div>
+</div>
