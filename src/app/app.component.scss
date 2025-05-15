@@ -1,5 +1,5 @@
 .nav{
-    border-bottom: 0px solid #ccc; //1
+    border-bottom: 0px solid #ccc;
     padding: 1rem;
     margin-bottom: 2rem;
 }
@@ -13,13 +13,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    //background-color: #e3e71e;
     height: 15vh;
-    //align-items: center;
-    //height: 100vh;
-
-    background-image: url('/assets/rainbow2.jpg'); // Ruta de la imagen
-    width: 99vw; // Ancho completo
+    background-image: url('/assets/rainbow2.jpg');
+    width: 99vw;
     background-size: 9%;
 
 }
@@ -31,18 +27,6 @@
 }
 
 
-/*
-:host {
-  display: block;
-  width: 100vw; // Ancho completo
-  height: 100vh; // Alto completo de la ventana
-  background-image: url('/assets/g2.jpg'); // Ruta de la imagen
-  background-size: cover; // La imagen se ajusta sin recortes
-  background-position: center; // Centra la imagen
-  background-repeat: no-repeat; // Evita repeticiones
-}
-*/
-
 @font-face {
   font-family: 'MiFuente';
   src: url('/assets/fuentes/f2.ttf') format('truetype');
@@ -51,26 +35,23 @@
 
 button {
   margin-top: 17px;
-  background-color: #8df59b; // Color de fondo
-  color: rgb(5, 73, 151); // Color del texto
-  padding: 10px 20px; // Espaciado interno
-  border: none; // Sin bordes
-  border-radius: 8px; // Bordes redondeados
-  font-size: 15px; // Tamaño de letra
-  cursor: pointer; // Cambia el cursor al pasar el mouse
-  transition: 0.3s; // Animación suave
-
-
-  ///////
+  background-color: #8df59b;
+  color: rgb(5, 73, 151);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
   width: 25vh;
   font-family: 'MiFuente', sans-serif !important;
-  font-size: 12px; // Tamaño de la fuente
-  text-align: center; // Centrado
-  text-transform: uppercase; // Mayúsculas
-  padding: 10px; // Espaciado interno
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
   font-weight: bold;
 
   &:hover {
-    background-color: #fbc2eb; // Cambio de color al pasar el mouse
+    background-color: #fbc2eb;
   }
 }

@@ -4,4 +4,5 @@ export interface UserData {
     authId: string;
     created_at: string;
     avatarUrl: string;
+    puntaje: number;
 }

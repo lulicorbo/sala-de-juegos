@@ -45,52 +45,36 @@
 
 h1 {
   font-family: 'MiFuente', sans-serif !important;
-  font-size: 32px; // Tamaño de la fuente
-  font-weight: bold; // Negrita
-  color: #900c77; // Color del texto
-  text-align: center; // Centrado
-  text-transform: uppercase; // Mayúsculas
-  padding: 10px; // Espaciado interno
+  font-size: 32px;
+  font-weight: bold;
+  color: #900c77;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
   font-weight: bold;
 }
 
-/*
-.login-button {
-    font-family: 'MiFuente', sans-serif !important;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 17px;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 200px;
-    font-weight: bold;
-}*/
-
 button {
   margin-top: 17px;
-  background-color: #8df59b; // Color de fondo
-  color:rgb(144, 12, 119); // Color del texto
-  padding: 10px 20px; // Espaciado interno
-  border: none; // Sin bordes
-  border-radius: 8px; // Bordes redondeados
-  font-size: 15px; // Tamaño de letra
-  cursor: pointer; // Cambia el cursor al pasar el mouse
-  transition: 0.3s; // Animación suave
+  background-color: #8df59b;
+  color:rgb(144, 12, 119);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
 
-
-  ///////
   width: 25vh;
   font-family: 'MiFuente', sans-serif !important;
-  font-size: 12px; // Tamaño de la fuente
-  text-align: center; // Centrado
-  text-transform: uppercase; // Mayúsculas
-  padding: 10px; // Espaciado interno
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
   font-weight: bold;
 
   &:hover {
-    background-color: #fbc2eb; // Cambio de color al pasar el mouse
+    background-color: #fbc2eb;
   }
 
 }

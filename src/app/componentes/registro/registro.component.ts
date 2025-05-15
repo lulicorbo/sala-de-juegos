@@ -43,15 +43,9 @@ register() {
 
 }
 
-
-
 saveUserData(user: User) {
-
-  const avatarUrl = this.saveFile().then((data) => {
-    if (data) {
-
   supabase.from('usuarios-sala-de-juegos').insert([
-    { authId: user.id, nombre: this.nombre, avatarUrl: data.path  }
+    { authId: user.id, nombre: this.nombre }
   ]).then(({ data, error }) => {
     if (error) {
       console.error('Error:', error.message);
@@ -59,28 +53,8 @@ saveUserData(user: User) {
       this.router.navigate(['/home']);
     }
   });
-
-}
-});
-
 }
 
-
-async saveFile() {
-const { data, error } = await supabase
-  .storage
-  .from('imagenes') ////
-  .upload(`usuarios/${this.avatarFile?.name}`, this.avatarFile!, {
-    cacheControl: '3600',
-    upsert: false
-  });
-
-  return data;
-}
-
-onFileSelected(event: any) {
-  this.avatarFile = event.target.files[0];
-}
 
 
 }
